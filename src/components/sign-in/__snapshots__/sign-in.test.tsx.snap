@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sign in field should be disabled while request loading 1`] = `
+<form
+  className="signin-form"
+  onSubmit={[Function]}
+>
+  <h1
+    className="mb-3 text-center"
+  >
+    Sign In
+  </h1>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="name"
+    >
+      Name
+    </label>
+    <input
+      aria-describedby="emailHelp"
+      className="form-control"
+      disabled={true}
+      id="name"
+      required={true}
+      type="text"
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="password"
+    >
+      Password
+    </label>
+    <input
+      className="form-control"
+      disabled={true}
+      id="password"
+      required={true}
+      type="password"
+    />
+  </div>
+  <div
+    className="alert alert-danger"
+    role="alert"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    Неверный логин или пароль.
+  </div>
+  <button
+    className="btn btn-primary signin-form__button"
+    disabled={true}
+    type="submit"
+  >
+    Log In
+  </button>
+</form>
+`;
+
+exports[`Sign in should render correctly 1`] = `
+<form
+  className="signin-form"
+  onSubmit={[Function]}
+>
+  <h1
+    className="mb-3 text-center"
+  >
+    Sign In
+  </h1>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="name"
+    >
+      Name
+    </label>
+    <input
+      aria-describedby="emailHelp"
+      className="form-control"
+      disabled={false}
+      id="name"
+      required={true}
+      type="text"
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="password"
+    >
+      Password
+    </label>
+    <input
+      className="form-control"
+      disabled={false}
+      id="password"
+      required={true}
+      type="password"
+    />
+  </div>
+  <div
+    className="alert alert-danger"
+    role="alert"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    Неверный логин или пароль.
+  </div>
+  <button
+    className="btn btn-primary signin-form__button"
+    disabled={false}
+    type="submit"
+  >
+    Log In
+  </button>
+</form>
+`;
+
+exports[`Sign in should show an error 1`] = `
+<form
+  className="signin-form"
+  onSubmit={[Function]}
+>
+  <h1
+    className="mb-3 text-center"
+  >
+    Sign In
+  </h1>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="name"
+    >
+      Name
+    </label>
+    <input
+      aria-describedby="emailHelp"
+      className="form-control"
+      disabled={false}
+      id="name"
+      required={true}
+      type="text"
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="password"
+    >
+      Password
+    </label>
+    <input
+      className="form-control"
+      disabled={false}
+      id="password"
+      required={true}
+      type="password"
+    />
+  </div>
+  <div
+    className="alert alert-danger"
+    role="alert"
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    Неверный логин или пароль.
+  </div>
+  <button
+    className="btn btn-primary signin-form__button"
+    disabled={false}
+    type="submit"
+  >
+    Log In
+  </button>
+</form>
+`;

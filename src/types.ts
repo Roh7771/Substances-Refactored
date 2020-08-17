@@ -24,21 +24,14 @@ export type QueryStringDataType = {
 
 export type LocationCollectionType = Map<number, Set<string>>
 
-export enum ErrorStatus {
-  OK,
-  DUPLICATE_CAS_NUMBER,
-  LOADING_FAILED,
-  WRONG_LOGIN_DATA
-}
+export type AllSubstancesServerResponseType = {
+  substances: SubstanceType[];
+};
 
-export enum AuthorizationStatus {
-  AUTH,
-  NO_AUTH
-}
+export type CSRFTokenServerResponseType = {
+  csrfToken: string;
+};
 
-export enum ModalWindowStatus {
-  EDIT = 'EDIT',
-  CREATE = 'CREATE',
-  DELETE = 'DELETE',
-  NONE = 'NONE'
-}
+export type OneSubstanceServerResponseType = {
+  substance: SubstanceType;
+};

@@ -1,9 +1,13 @@
 import {
-  AppStatusStateType, SetModalWindowStatusActionType,
-  AppStatusActionConstsTypes, SetSessionCheckingStatusActionType,
-  SetRequestLoadingStatusActionType, AppStatusActionTypes, SetErrorStatusActionType,
+  AppStatusStateType,
+  SetModalWindowStatusActionType,
+  AppStatusActionConstsTypes,
+  SetSessionCheckingStatusActionType,
+  SetRequestLoadingStatusActionType,
+  AppStatusActionTypes,
+  SetErrorStatusActionType,
 } from './types';
-import { ModalWindowStatus, ErrorStatus } from '../../types';
+import { ModalWindowStatus, ErrorStatus } from '../../const';
 
 const appStatusInitialState: AppStatusStateType = {
   isRequestLoading: false,
@@ -20,17 +24,23 @@ const actionTypes: AppStatusActionConstsTypes = {
 };
 
 const appStatusActionCreators = {
-  setModalWindowStatus: (status: ModalWindowStatus): SetModalWindowStatusActionType => ({
+  setModalWindowStatus: (
+    status: ModalWindowStatus,
+  ): SetModalWindowStatusActionType => ({
     type: actionTypes.SET_MODAL_WINDOW_STATUS,
     payload: status,
   }),
 
-  setSessionCheckingStatus: (status: boolean): SetSessionCheckingStatusActionType => ({
+  setSessionCheckingStatus: (
+    status: boolean,
+  ): SetSessionCheckingStatusActionType => ({
     type: actionTypes.SET_SESSION_CHECKING_STATUS,
     payload: status,
   }),
 
-  setRequestLoadingStatus: (status: boolean): SetRequestLoadingStatusActionType => ({
+  setRequestLoadingStatus: (
+    status: boolean,
+  ): SetRequestLoadingStatusActionType => ({
     type: actionTypes.SET_REQUEST_LOADING_STATUS,
     payload: status,
   }),
@@ -41,7 +51,10 @@ const appStatusActionCreators = {
   }),
 };
 
-const appStatusReducer = (state: AppStatusStateType, action: AppStatusActionTypes): AppStatusStateType => {
+const appStatusReducer = (
+  state: AppStatusStateType,
+  action: AppStatusActionTypes,
+): AppStatusStateType => {
   switch (action.type) {
     case actionTypes.SET_MODAL_WINDOW_STATUS:
       return {

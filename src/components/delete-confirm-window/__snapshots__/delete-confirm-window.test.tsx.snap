@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Delete Confirm Window should render correctly 1`] = `
+<div
+  className="delete-confirm-field"
+>
+  <div
+    className="delete-confirm-field__modal"
+  >
+    <h2
+      className="delete-confirm-field__text"
+    >
+      Вы уверены, что хотите удалить этот реактив из базы данных?
+    </h2>
+    <div
+      className="delete-confirm-field__buttons"
+    >
+      <button
+        className="btn btn-primary"
+        onClick={[Function]}
+        type="button"
+      >
+        Да
+      </button>
+      <button
+        className="btn btn-primary"
+        onClick={[Function]}
+        type="button"
+      >
+        Нет
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -1,21 +1,46 @@
 import * as React from 'react';
-import { ErrorStatus } from '../../types';
+import { CombinedActionTypes } from '../../reducer/rootReducer/types';
+import { substanceActionCreators } from '../../reducer/substance/substanceReducer';
+import { ErrorStatus } from '../../const';
 
-interface Props {
-  onSearchBarChahge: (changeableInput: 'select' | 'input', value: string) => void,
-  searchSelectValue: string,
-  searchInputValue: string,
-  errorStatus: ErrorStatus,
-  isSubstancesLoading: boolean
-}
+type Props = {
+  searchSelectValue: string;
+  searchInputValue: string;
+  errorStatus: ErrorStatus;
+  dispatch: React.Dispatch<CombinedActionTypes>;
+};
 
-const SearchBar: React.FC<Props> = (props: Props) => {
+const SearchBar: React.FC<Props> = React.memo((props: Props) => {
   const {
-    onSearchBarChahge, searchSelectValue, searchInputValue, errorStatus, isSubstancesLoading,
+    searchSelectValue,
+    searchInputValue,
+    errorStatus,
+    dispatch,
   } = props;
+
+  const handleSearchBarChange = React.useCallback(
+    (changeableInput: 'select' | 'input', value: string): void => {
+      const newSearchData = { type: searchSelectValue, value: searchInputValue };
+      switch (changeableInput) {
+        case 'select':
+          newSearchData.type = value;
+          break;
+        case 'input':
+          newSearchData.value = value;
+          break;
+        default:
+          return;
+      }
+      dispatch(substanceActionCreators.setQuerySearchData(newSearchData));
+    },
+    [searchSelectValue, searchInputValue],
+  );
+
   return (
     <nav className="navbar navbar-light bg-light">
-      <span className="navbar-brand font-weight-bold">Лаборатория СМАРТ-НАНОСИСТЕМ</span>
+      <span className="navbar-brand font-weight-bold">
+        Лаборатория СМАРТ-НАНОСИСТЕМ
+      </span>
       <form
         className="form-inline"
         onSubmit={(e: React.FormEvent<HTMLFormElement>) => e.preventDefault()}
@@ -23,12 +48,14 @@ const SearchBar: React.FC<Props> = (props: Props) => {
         <select
           style={{ marginRight: '20px' }}
           required
-          disabled={errorStatus === ErrorStatus.LOADING_FAILED || isSubstancesLoading}
+          disabled={
+            errorStatus === ErrorStatus.LOADING_FAILED
+          }
           value={searchSelectValue === 'casNumber' ? 'CAS RN' : 'Название'}
           className="form-control"
           onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
             const value = e.target.value === 'CAS RN' ? 'casNumber' : 'name';
-            onSearchBarChahge('select', value);
+            handleSearchBarChange('select', value);
           }}
         >
           <option>CAS RN</option>
@@ -40,15 +67,17 @@ const SearchBar: React.FC<Props> = (props: Props) => {
           style={{ width: '400px' }}
           placeholder="Поиск"
           aria-label="Search"
-          disabled={errorStatus === ErrorStatus.LOADING_FAILED || isSubstancesLoading}
+          disabled={
+            errorStatus === ErrorStatus.LOADING_FAILED
+          }
           value={searchInputValue}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-            onSearchBarChahge('input', e.target.value);
+            handleSearchBarChange('input', e.target.value);
           }}
         />
       </form>
     </nav>
   );
-};
+});
 
 export default SearchBar;

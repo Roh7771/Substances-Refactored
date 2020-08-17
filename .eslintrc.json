@@ -1,9 +1,10 @@
 {
   "env": {
     "browser": true,
-    "es6": true
+    "es6": true,
+    "jest": true
   },
-  "extends": ["plugin:react/recommended", "airbnb"],
+  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -18,18 +19,22 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "jsx-a11y/label-has-associated-control": [ "error", {
-      "required": {
-        "some": [ "nesting", "id" ]
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
       }
-    }],
+    ],
+    "no-console": "warn",
     "no-case-declarations": "off",
     "max-len": ["error", { "code": 125 }],
     "jsx-a11y/control-has-associated-label": 0,
     "no-underscore-dangle": 0,
     "linebreak-style": 0,
     "arrow-parens": ["error", "as-needed"],
-    "space-before-function-paren": ["error", "never"],
+    "space-before-function-paren": ["error", "always"],
     "react/jsx-filename-extension": [
       1,
       { "extensions": [".js", ".jsx", ".tsx"] }
@@ -44,11 +49,14 @@
         "tsx": "never"
       }
     ],
-    "@typescript-eslint/no-unused-vars": ["error", {
-      "vars": "all",
-      "args": "after-used",
-      "ignoreRestSiblings": false
-    }]
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false
+      }
+    ]
   },
   "settings": {
     "import/resolver": {

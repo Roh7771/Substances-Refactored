@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter bar should not render when there is an error 1`] = `
+<div
+  className="filter-bar"
+  style={
+    Object {
+      "display": "none",
+    }
+  }
+>
+  <h2
+    className="filter-bar__text"
+  >
+    Фильтр по лабораториям:
+  </h2>
+  <div
+    className="form-check form-check-inline"
+  >
+    <input
+      checked={true}
+      className="form-check-input"
+      id="lab-111"
+      onChange={[Function]}
+      type="checkbox"
+      value={111}
+    />
+    <label
+      className="form-check-label"
+      htmlFor="lab-111"
+    >
+      111
+    </label>
+  </div>
+  <div
+    className="form-check form-check-inline"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      id="lab-222"
+      onChange={[Function]}
+      type="checkbox"
+      value={222}
+    />
+    <label
+      className="form-check-label"
+      htmlFor="lab-222"
+    >
+      222
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Filter bar should render correctly 1`] = `
+<div
+  className="filter-bar"
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <h2
+    className="filter-bar__text"
+  >
+    Фильтр по лабораториям:
+  </h2>
+  <div
+    className="form-check form-check-inline"
+  >
+    <input
+      checked={true}
+      className="form-check-input"
+      id="lab-111"
+      onChange={[Function]}
+      type="checkbox"
+      value={111}
+    />
+    <label
+      className="form-check-label"
+      htmlFor="lab-111"
+    >
+      111
+    </label>
+  </div>
+  <div
+    className="form-check form-check-inline"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      id="lab-222"
+      onChange={[Function]}
+      type="checkbox"
+      value={222}
+    />
+    <label
+      className="form-check-label"
+      htmlFor="lab-222"
+    >
+      222
+    </label>
+  </div>
+</div>
+`;

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search bar should render correctly 1`] = `
+<nav
+  className="navbar navbar-light bg-light"
+>
+  <span
+    className="navbar-brand font-weight-bold"
+  >
+    Лаборатория СМАРТ-НАНОСИСТЕМ
+  </span>
+  <form
+    className="form-inline"
+    onSubmit={[Function]}
+  >
+    <select
+      className="form-control"
+      disabled={false}
+      onChange={[Function]}
+      required={true}
+      style={
+        Object {
+          "marginRight": "20px",
+        }
+      }
+      value="Название"
+    >
+      <option>
+        CAS RN
+      </option>
+      <option>
+        Название
+      </option>
+    </select>
+    <input
+      aria-label="Search"
+      className="form-control mr-sm-2"
+      disabled={false}
+      onChange={[Function]}
+      placeholder="Поиск"
+      style={
+        Object {
+          "width": "400px",
+        }
+      }
+      type="search"
+      value="some value"
+    />
+  </form>
+</nav>
+`;
