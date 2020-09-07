@@ -44,7 +44,7 @@ const SubstanceList: React.FC<Props> = React.memo((props: Props) => {
       document.documentElement.clientHeight,
     );
     if (
-      windowHeight + window.pageYOffset === scrollHeight
+      windowHeight + window.pageYOffset > scrollHeight - 50
       && isSubstancesLeft
     ) {
       dispatch(substanceActionCreators.addSubstanceToShowCount());
