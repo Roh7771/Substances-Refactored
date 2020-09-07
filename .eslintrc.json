@@ -30,6 +30,7 @@
     "no-console": "warn",
     "no-case-declarations": "off",
     "max-len": ["error", { "code": 125 }],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/**/*.test.tsx", "**/*.e2e.test.tsx"]}],
     "jsx-a11y/control-has-associated-label": 0,
     "no-underscore-dangle": 0,
     "linebreak-style": 0,
