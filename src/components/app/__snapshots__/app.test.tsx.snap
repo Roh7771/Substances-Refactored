@@ -1,0 +1,2232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render create window 1`] = `
+Array [
+  <div
+    className="edit-field"
+  >
+    <form
+      className="edit-field__form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="number"
+        >
+          Номер
+        </label>
+        <input
+          className="form-control"
+          defaultValue=""
+          id="number"
+          placeholder="Введите номер"
+          required={true}
+          type="number"
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="name"
+        >
+          Название
+        </label>
+        <input
+          className="form-control"
+          defaultValue=""
+          id="name"
+          placeholder="Введите название"
+          required={true}
+          type="text"
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="amount"
+        >
+          Количество
+        </label>
+        <input
+          className="form-control"
+          defaultValue=""
+          id="amount"
+          placeholder="Введите количество"
+          type="text"
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="location"
+        >
+          Лаборатория
+        </label>
+        <select
+          className="form-control"
+          defaultValue=""
+          id="location"
+          onChange={[Function]}
+          required={true}
+        >
+          <option>
+            111
+          </option>
+          <option>
+            222
+          </option>
+        </select>
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="place"
+        >
+          Место
+        </label>
+        <div
+          className="d-flex"
+        >
+          <select
+            className="form-control mr-3"
+            defaultValue=""
+            id="place"
+            required={true}
+          >
+            <option>
+              first place
+            </option>
+            <option>
+              second place
+            </option>
+          </select>
+          <button
+            className="btn btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-plus fa-w-14 "
+              data-icon="plus"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="company"
+        >
+          Фирма
+        </label>
+        <input
+          className="form-control"
+          defaultValue=""
+          id="company"
+          placeholder="Введите фирму"
+          type="text"
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="cas-number"
+        >
+          CAS RN
+        </label>
+        <input
+          className="form-control"
+          defaultValue=""
+          id="cas-number"
+          placeholder="Введите CAS-номер"
+          type="text"
+        />
+      </div>
+      <button
+        className="btn btn-primary"
+        type="submit"
+      >
+        Принять
+      </button>
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-times fa-w-11 edit-field__close"
+        data-icon="times"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 352 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </form>
+  </div>,
+  <nav
+    className="navbar navbar-light bg-light"
+  >
+    <span
+      className="navbar-brand font-weight-bold"
+    >
+      Лаборатория СМАРТ-НАНОСИСТЕМ
+    </span>
+    <form
+      className="form-inline"
+      onSubmit={[Function]}
+    >
+      <select
+        className="form-control"
+        disabled={false}
+        onChange={[Function]}
+        required={true}
+        style={
+          Object {
+            "marginRight": "20px",
+          }
+        }
+        value="CAS RN"
+      >
+        <option>
+          CAS RN
+        </option>
+        <option>
+          Название
+        </option>
+      </select>
+      <input
+        aria-label="Search"
+        className="form-control mr-sm-2"
+        disabled={false}
+        onChange={[Function]}
+        placeholder="Поиск"
+        style={
+          Object {
+            "width": "400px",
+          }
+        }
+        type="search"
+        value=""
+      />
+    </form>
+  </nav>,
+  <div
+    className="filter-bar"
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <h2
+      className="filter-bar__text"
+    >
+      Фильтр по лабораториям:
+    </h2>
+    <div
+      className="form-check form-check-inline"
+    >
+      <input
+        checked={false}
+        className="form-check-input"
+        id="lab-111"
+        onChange={[Function]}
+        type="checkbox"
+        value={111}
+      />
+      <label
+        className="form-check-label"
+        htmlFor="lab-111"
+      >
+        111
+      </label>
+    </div>
+    <div
+      className="form-check form-check-inline"
+    >
+      <input
+        checked={false}
+        className="form-check-input"
+        id="lab-222"
+        onChange={[Function]}
+        type="checkbox"
+        value={222}
+      />
+      <label
+        className="form-check-label"
+        htmlFor="lab-222"
+      >
+        222
+      </label>
+    </div>
+  </div>,
+  <table
+    className="table mb-0"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+        <th
+          scope="col"
+        >
+          Название
+        </th>
+        <th
+          scope="col"
+        >
+          Количество
+        </th>
+        <th
+          scope="col"
+        >
+          Лаборатория
+        </th>
+        <th
+          scope="col"
+        >
+          Место
+        </th>
+        <th
+          scope="col"
+        >
+          Фирма
+        </th>
+        <th
+          scope="col"
+        >
+          CAS
+        </th>
+        <th
+          scope="col"
+        />
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          className="align-middle"
+          scope="row"
+        >
+          1
+        </th>
+        <td
+          className="align-middle"
+        >
+          some name
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          111
+        </td>
+        <td
+          className="align-middle"
+        >
+          some place
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
+          <button
+            className="btn btn-primary mb-1"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pen fa-w-16 "
+              data-icon="pen"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash fa-w-14 "
+              data-icon="trash"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th
+          className="align-middle"
+          scope="row"
+        >
+          1
+        </th>
+        <td
+          className="align-middle"
+        >
+          some name
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          111
+        </td>
+        <td
+          className="align-middle"
+        >
+          some place
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
+          <button
+            className="btn btn-primary mb-1"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pen fa-w-16 "
+              data-icon="pen"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash fa-w-14 "
+              data-icon="trash"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th
+          className="align-middle"
+          scope="row"
+        >
+          1
+        </th>
+        <td
+          className="align-middle"
+        >
+          some name
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          111
+        </td>
+        <td
+          className="align-middle"
+        >
+          some place
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
+          <button
+            className="btn btn-primary mb-1"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pen fa-w-16 "
+              data-icon="pen"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash fa-w-14 "
+              data-icon="trash"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <button
+    className="btn btn-primary create-button"
+    onClick={[Function]}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-plus fa-w-14 "
+      data-icon="plus"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>,
+]
+`;
+
+exports[`App should render delete confirm window 1`] = `
+Array [
+  <div
+    className="delete-confirm-field"
+  >
+    <div
+      className="delete-confirm-field__modal"
+    >
+      <h2
+        className="delete-confirm-field__text"
+      >
+        Вы уверены, что хотите удалить этот реактив из базы данных?
+      </h2>
+      <div
+        className="delete-confirm-field__buttons"
+      >
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="button"
+        >
+          Да
+        </button>
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="button"
+        >
+          Нет
+        </button>
+      </div>
+    </div>
+  </div>,
+  <nav
+    className="navbar navbar-light bg-light"
+  >
+    <span
+      className="navbar-brand font-weight-bold"
+    >
+      Лаборатория СМАРТ-НАНОСИСТЕМ
+    </span>
+    <form
+      className="form-inline"
+      onSubmit={[Function]}
+    >
+      <select
+        className="form-control"
+        disabled={false}
+        onChange={[Function]}
+        required={true}
+        style={
+          Object {
+            "marginRight": "20px",
+          }
+        }
+        value="CAS RN"
+      >
+        <option>
+          CAS RN
+        </option>
+        <option>
+          Название
+        </option>
+      </select>
+      <input
+        aria-label="Search"
+        className="form-control mr-sm-2"
+        disabled={false}
+        onChange={[Function]}
+        placeholder="Поиск"
+        style={
+          Object {
+            "width": "400px",
+          }
+        }
+        type="search"
+        value=""
+      />
+    </form>
+  </nav>,
+  <div
+    className="filter-bar"
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <h2
+      className="filter-bar__text"
+    >
+      Фильтр по лабораториям:
+    </h2>
+    <div
+      className="form-check form-check-inline"
+    >
+      <input
+        checked={false}
+        className="form-check-input"
+        id="lab-111"
+        onChange={[Function]}
+        type="checkbox"
+        value={111}
+      />
+      <label
+        className="form-check-label"
+        htmlFor="lab-111"
+      >
+        111
+      </label>
+    </div>
+    <div
+      className="form-check form-check-inline"
+    >
+      <input
+        checked={false}
+        className="form-check-input"
+        id="lab-222"
+        onChange={[Function]}
+        type="checkbox"
+        value={222}
+      />
+      <label
+        className="form-check-label"
+        htmlFor="lab-222"
+      >
+        222
+      </label>
+    </div>
+  </div>,
+  <table
+    className="table mb-0"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+        <th
+          scope="col"
+        >
+          Название
+        </th>
+        <th
+          scope="col"
+        >
+          Количество
+        </th>
+        <th
+          scope="col"
+        >
+          Лаборатория
+        </th>
+        <th
+          scope="col"
+        >
+          Место
+        </th>
+        <th
+          scope="col"
+        >
+          Фирма
+        </th>
+        <th
+          scope="col"
+        >
+          CAS
+        </th>
+        <th
+          scope="col"
+        />
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          className="align-middle"
+          scope="row"
+        >
+          1
+        </th>
+        <td
+          className="align-middle"
+        >
+          some name
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          111
+        </td>
+        <td
+          className="align-middle"
+        >
+          some place
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
+          <button
+            className="btn btn-primary mb-1"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pen fa-w-16 "
+              data-icon="pen"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash fa-w-14 "
+              data-icon="trash"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th
+          className="align-middle"
+          scope="row"
+        >
+          1
+        </th>
+        <td
+          className="align-middle"
+        >
+          some name
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          111
+        </td>
+        <td
+          className="align-middle"
+        >
+          some place
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
+          <button
+            className="btn btn-primary mb-1"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pen fa-w-16 "
+              data-icon="pen"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash fa-w-14 "
+              data-icon="trash"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th
+          className="align-middle"
+          scope="row"
+        >
+          1
+        </th>
+        <td
+          className="align-middle"
+        >
+          some name
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          111
+        </td>
+        <td
+          className="align-middle"
+        >
+          some place
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
+          <button
+            className="btn btn-primary mb-1"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pen fa-w-16 "
+              data-icon="pen"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash fa-w-14 "
+              data-icon="trash"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <button
+    className="btn btn-primary create-button"
+    onClick={[Function]}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-plus fa-w-14 "
+      data-icon="plus"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>,
+]
+`;
+
+exports[`App should render edit window 1`] = `
+Array [
+  <div
+    className="edit-field"
+  >
+    <form
+      className="edit-field__form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="number"
+        >
+          Номер
+        </label>
+        <input
+          className="form-control"
+          defaultValue={1}
+          id="number"
+          placeholder="Введите номер"
+          required={true}
+          type="number"
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="name"
+        >
+          Название
+        </label>
+        <input
+          className="form-control"
+          defaultValue="some name"
+          id="name"
+          placeholder="Введите название"
+          required={true}
+          type="text"
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="amount"
+        >
+          Количество
+        </label>
+        <input
+          className="form-control"
+          id="amount"
+          placeholder="Введите количество"
+          type="text"
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="location"
+        >
+          Лаборатория
+        </label>
+        <select
+          className="form-control"
+          defaultValue={111}
+          id="location"
+          onChange={[Function]}
+          required={true}
+        >
+          <option>
+            111
+          </option>
+          <option>
+            222
+          </option>
+        </select>
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="place"
+        >
+          Место
+        </label>
+        <div
+          className="d-flex"
+        >
+          <select
+            className="form-control mr-3"
+            defaultValue="some place"
+            id="place"
+            required={true}
+          >
+            <option>
+              first place
+            </option>
+            <option>
+              second place
+            </option>
+          </select>
+          <button
+            className="btn btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-plus fa-w-14 "
+              data-icon="plus"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="company"
+        >
+          Фирма
+        </label>
+        <input
+          className="form-control"
+          id="company"
+          placeholder="Введите фирму"
+          type="text"
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="cas-number"
+        >
+          CAS RN
+        </label>
+        <input
+          className="form-control"
+          id="cas-number"
+          placeholder="Введите CAS-номер"
+          type="text"
+        />
+      </div>
+      <button
+        className="btn btn-primary"
+        type="submit"
+      >
+        Принять
+      </button>
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-times fa-w-11 edit-field__close"
+        data-icon="times"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 352 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </form>
+  </div>,
+  <nav
+    className="navbar navbar-light bg-light"
+  >
+    <span
+      className="navbar-brand font-weight-bold"
+    >
+      Лаборатория СМАРТ-НАНОСИСТЕМ
+    </span>
+    <form
+      className="form-inline"
+      onSubmit={[Function]}
+    >
+      <select
+        className="form-control"
+        disabled={false}
+        onChange={[Function]}
+        required={true}
+        style={
+          Object {
+            "marginRight": "20px",
+          }
+        }
+        value="CAS RN"
+      >
+        <option>
+          CAS RN
+        </option>
+        <option>
+          Название
+        </option>
+      </select>
+      <input
+        aria-label="Search"
+        className="form-control mr-sm-2"
+        disabled={false}
+        onChange={[Function]}
+        placeholder="Поиск"
+        style={
+          Object {
+            "width": "400px",
+          }
+        }
+        type="search"
+        value=""
+      />
+    </form>
+  </nav>,
+  <div
+    className="filter-bar"
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <h2
+      className="filter-bar__text"
+    >
+      Фильтр по лабораториям:
+    </h2>
+    <div
+      className="form-check form-check-inline"
+    >
+      <input
+        checked={false}
+        className="form-check-input"
+        id="lab-111"
+        onChange={[Function]}
+        type="checkbox"
+        value={111}
+      />
+      <label
+        className="form-check-label"
+        htmlFor="lab-111"
+      >
+        111
+      </label>
+    </div>
+    <div
+      className="form-check form-check-inline"
+    >
+      <input
+        checked={false}
+        className="form-check-input"
+        id="lab-222"
+        onChange={[Function]}
+        type="checkbox"
+        value={222}
+      />
+      <label
+        className="form-check-label"
+        htmlFor="lab-222"
+      >
+        222
+      </label>
+    </div>
+  </div>,
+  <table
+    className="table mb-0"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+        <th
+          scope="col"
+        >
+          Название
+        </th>
+        <th
+          scope="col"
+        >
+          Количество
+        </th>
+        <th
+          scope="col"
+        >
+          Лаборатория
+        </th>
+        <th
+          scope="col"
+        >
+          Место
+        </th>
+        <th
+          scope="col"
+        >
+          Фирма
+        </th>
+        <th
+          scope="col"
+        >
+          CAS
+        </th>
+        <th
+          scope="col"
+        />
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          className="align-middle"
+          scope="row"
+        >
+          1
+        </th>
+        <td
+          className="align-middle"
+        >
+          some name
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          111
+        </td>
+        <td
+          className="align-middle"
+        >
+          some place
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
+          <button
+            className="btn btn-primary mb-1"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pen fa-w-16 "
+              data-icon="pen"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash fa-w-14 "
+              data-icon="trash"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th
+          className="align-middle"
+          scope="row"
+        >
+          1
+        </th>
+        <td
+          className="align-middle"
+        >
+          some name
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          111
+        </td>
+        <td
+          className="align-middle"
+        >
+          some place
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
+          <button
+            className="btn btn-primary mb-1"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pen fa-w-16 "
+              data-icon="pen"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash fa-w-14 "
+              data-icon="trash"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th
+          className="align-middle"
+          scope="row"
+        >
+          1
+        </th>
+        <td
+          className="align-middle"
+        >
+          some name
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          111
+        </td>
+        <td
+          className="align-middle"
+        >
+          some place
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
+          <button
+            className="btn btn-primary mb-1"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pen fa-w-16 "
+              data-icon="pen"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash fa-w-14 "
+              data-icon="trash"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <button
+    className="btn btn-primary create-button"
+    onClick={[Function]}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-plus fa-w-14 "
+      data-icon="plus"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>,
+]
+`;
+
+exports[`App should render session checking message 1`] = `
+<div
+  className="message-block"
+>
+  <h1>
+    Пожалуйста, подождите, идет процесс аутентификации.
+  </h1>
+  <div
+    className="lds-facebook"
+  >
+    <div />
+    <div />
+    <div />
+  </div>
+</div>
+`;
+
+exports[`App should render sign in block 1`] = `
+<form
+  className="signin-form"
+  onSubmit={[Function]}
+>
+  <h1
+    className="mb-3 text-center"
+  >
+    Sign In
+  </h1>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="name"
+    >
+      Name
+    </label>
+    <input
+      aria-describedby="emailHelp"
+      className="form-control"
+      disabled={false}
+      id="name"
+      required={true}
+      type="text"
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="password"
+    >
+      Password
+    </label>
+    <input
+      className="form-control"
+      disabled={false}
+      id="password"
+      required={true}
+      type="password"
+    />
+  </div>
+  <div
+    className="alert alert-danger"
+    role="alert"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    Неверный логин или пароль.
+  </div>
+  <button
+    className="btn btn-primary signin-form__button"
+    disabled={false}
+    type="submit"
+  >
+    Log In
+  </button>
+</form>
+`;
+
+exports[`App should render substance list 1`] = `
+Array [
+  <nav
+    className="navbar navbar-light bg-light"
+  >
+    <span
+      className="navbar-brand font-weight-bold"
+    >
+      Лаборатория СМАРТ-НАНОСИСТЕМ
+    </span>
+    <form
+      className="form-inline"
+      onSubmit={[Function]}
+    >
+      <select
+        className="form-control"
+        disabled={false}
+        onChange={[Function]}
+        required={true}
+        style={
+          Object {
+            "marginRight": "20px",
+          }
+        }
+        value="CAS RN"
+      >
+        <option>
+          CAS RN
+        </option>
+        <option>
+          Название
+        </option>
+      </select>
+      <input
+        aria-label="Search"
+        className="form-control mr-sm-2"
+        disabled={false}
+        onChange={[Function]}
+        placeholder="Поиск"
+        style={
+          Object {
+            "width": "400px",
+          }
+        }
+        type="search"
+        value=""
+      />
+    </form>
+  </nav>,
+  <div
+    className="filter-bar"
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <h2
+      className="filter-bar__text"
+    >
+      Фильтр по лабораториям:
+    </h2>
+    <div
+      className="form-check form-check-inline"
+    >
+      <input
+        checked={false}
+        className="form-check-input"
+        id="lab-111"
+        onChange={[Function]}
+        type="checkbox"
+        value={111}
+      />
+      <label
+        className="form-check-label"
+        htmlFor="lab-111"
+      >
+        111
+      </label>
+    </div>
+    <div
+      className="form-check form-check-inline"
+    >
+      <input
+        checked={false}
+        className="form-check-input"
+        id="lab-222"
+        onChange={[Function]}
+        type="checkbox"
+        value={222}
+      />
+      <label
+        className="form-check-label"
+        htmlFor="lab-222"
+      >
+        222
+      </label>
+    </div>
+  </div>,
+  <table
+    className="table mb-0"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+        <th
+          scope="col"
+        >
+          Название
+        </th>
+        <th
+          scope="col"
+        >
+          Количество
+        </th>
+        <th
+          scope="col"
+        >
+          Лаборатория
+        </th>
+        <th
+          scope="col"
+        >
+          Место
+        </th>
+        <th
+          scope="col"
+        >
+          Фирма
+        </th>
+        <th
+          scope="col"
+        >
+          CAS
+        </th>
+        <th
+          scope="col"
+        />
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          className="align-middle"
+          scope="row"
+        >
+          1
+        </th>
+        <td
+          className="align-middle"
+        >
+          some name
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          111
+        </td>
+        <td
+          className="align-middle"
+        >
+          some place
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
+          <button
+            className="btn btn-primary mb-1"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pen fa-w-16 "
+              data-icon="pen"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash fa-w-14 "
+              data-icon="trash"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th
+          className="align-middle"
+          scope="row"
+        >
+          1
+        </th>
+        <td
+          className="align-middle"
+        >
+          some name
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          111
+        </td>
+        <td
+          className="align-middle"
+        >
+          some place
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
+          <button
+            className="btn btn-primary mb-1"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pen fa-w-16 "
+              data-icon="pen"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash fa-w-14 "
+              data-icon="trash"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th
+          className="align-middle"
+          scope="row"
+        >
+          1
+        </th>
+        <td
+          className="align-middle"
+        >
+          some name
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          111
+        </td>
+        <td
+          className="align-middle"
+        >
+          some place
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="align-middle"
+        >
+          -
+        </td>
+        <td
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
+          <button
+            className="btn btn-primary mb-1"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-pen fa-w-16 "
+              data-icon="pen"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+          <button
+            className="btn btn-danger"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-trash fa-w-14 "
+              data-icon="trash"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+  <button
+    className="btn btn-primary create-button"
+    onClick={[Function]}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-plus fa-w-14 "
+      data-icon="plus"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>,
+]
+`;

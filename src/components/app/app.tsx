@@ -49,7 +49,7 @@ const App: React.FC<Props> = () => {
 
   const resetModalWindow = React.useCallback(() => {
     dispatch(
-      appStatusActionCreators.setModalWindowStatus(ModalWindowStatus.NONE),
+      appStatusActionCreators.setModalWindowStatus(ModalWindowStatus.NONE)
     );
     dispatch(substanceActionCreators.setSubstanceToEdit(null));
     dispatch(appStatusActionCreators.setErrorStatus(ErrorStatus.OK));
@@ -108,7 +108,6 @@ const App: React.FC<Props> = () => {
             locationCollection={locationCollection}
             resetModalWindow={resetModalWindow}
             substanceToEdit={null}
-            errorStatus={errorStatus}
             csrfToken={csrfToken}
             substanceList={substanceList}
             type={ModalWindowStatus.CREATE}
@@ -128,7 +127,6 @@ const App: React.FC<Props> = () => {
           <CreateWindow
             locationCollection={locationCollection}
             substanceToEdit={substanceToEdit}
-            errorStatus={errorStatus}
             dispatch={dispatch}
             type={ModalWindowStatus.EDIT}
             substanceList={substanceList}
@@ -161,7 +159,7 @@ const App: React.FC<Props> = () => {
               dispatch={dispatch}
               substancesToRender={[...substanceList].splice(
                 0,
-                substancesToShow,
+                substancesToShow
               )}
               isSubstancesLeft={substancesToShow <= substanceList.length}
             />
