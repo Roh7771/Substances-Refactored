@@ -27,6 +27,9 @@ const CreateWindow: React.FC<Props> = React.memo(
     substanceList,
   }: Props) => {
     const [isNewPlace, setNewPlaceStatus] = React.useState<boolean>(false);
+    const [isNewLocation, setNewLocationStatus] = React.useState<boolean>(
+      false,
+    );
     const [chosenLocation, setChosenLocation] = React.useState<number>(
       substanceToEdit ? substanceToEdit.location : 111,
     );
@@ -70,17 +73,21 @@ const CreateWindow: React.FC<Props> = React.memo(
     const numberInputEl = React.useRef<HTMLInputElement>(null);
     const nameInputEl = React.useRef<HTMLInputElement>(null);
     const amountInputEl = React.useRef<HTMLInputElement>(null);
-    const locationInputEl = React.useRef<HTMLSelectElement>(null);
+    const locationTextInputEl = React.useRef<HTMLInputElement>(null);
+    const locationSelectInputEl = React.useRef<HTMLSelectElement>(null);
     const placeSelectInputEl = React.useRef<HTMLSelectElement>(null);
     const placeTextInputEl = React.useRef<HTMLInputElement>(null);
     const casNumberInputEl = React.useRef<HTMLInputElement>(null);
     const companyInputEl = React.useRef<HTMLInputElement>(null);
 
     React.useEffect(() => {
-      if (placeTextInputEl.current) {
+      if (locationTextInputEl.current) {
+        locationTextInputEl.current.focus();
+      }
+      if (placeTextInputEl.current && !isNewLocation) {
         placeTextInputEl.current.focus();
       }
-    }, [isNewPlace]);
+    }, [isNewPlace, isNewLocation]);
 
     return (
       <div className="edit-field">
@@ -90,10 +97,23 @@ const CreateWindow: React.FC<Props> = React.memo(
             e.preventDefault();
             if (isNewPlace) {
               const newLocationCollection = new Map(locationCollection);
-              const places = newLocationCollection.get(chosenLocation);
-              if (places) {
-                places.add(placeTextInputEl.current?.value as string);
+
+              if (isNewLocation) {
+                newLocationCollection.set(
+                  Number(locationTextInputEl.current?.value),
+                  new Set<string>().add(
+                    placeTextInputEl.current?.value as string,
+                  ),
+                );
               }
+
+              if (!isNewLocation) {
+                const places = newLocationCollection.get(chosenLocation);
+                if (places) {
+                  places.add(placeTextInputEl.current?.value as string);
+                }
+              }
+
               dispatch(
                 substanceActionCreators.setLocationCollection(
                   newLocationCollection,
@@ -103,7 +123,9 @@ const CreateWindow: React.FC<Props> = React.memo(
             const substanceData: SubstanceType = {
               name: nameInputEl.current?.value as string,
               number: Number(numberInputEl.current?.value) as number,
-              location: Number(locationInputEl.current?.value) as number,
+              location: isNewLocation
+                ? Number(locationTextInputEl.current?.value)
+                : Number(locationSelectInputEl.current?.value),
               place: isNewPlace
                 ? (placeTextInputEl.current?.value as string)
                 : (placeSelectInputEl.current?.value as string),
@@ -154,20 +176,50 @@ const CreateWindow: React.FC<Props> = React.memo(
           </div>
           <div className="form-group">
             <label htmlFor="location">Лаборатория</label>
-            <select
-              ref={locationInputEl}
-              defaultValue={substanceToEdit ? substanceToEdit.location : ''}
-              required
-              className="form-control"
-              id="location"
-              onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
-                setChosenLocation(Number(e.target.value));
-              }}
-            >
-              {[...locationCollection.keys()].map((location, i) => (
-                <option key={`${i + 1}-${location}`}>{location}</option>
-              ))}
-            </select>
+            <div className="d-flex">
+              {isNewLocation ? (
+                <input
+                  ref={locationTextInputEl}
+                  className="form-control mr-3"
+                  placeholder="Введите номер новой лаборатории"
+                  type="number"
+                  required
+                  id="location"
+                />
+              ) : (
+                <select
+                  ref={locationSelectInputEl}
+                  defaultValue={
+                    substanceToEdit ? substanceToEdit.location : 111
+                  }
+                  required
+                  className="form-control mr-3"
+                  id="location"
+                  onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
+                    setChosenLocation(Number(e.target.value));
+                  }}
+                >
+                  {[...locationCollection.keys()].map((location, i) => (
+                    <option key={`${i + 1}-${location}`}>{location}</option>
+                  ))}
+                </select>
+              )}
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={() =>
+                  setNewLocationStatus(prevState => {
+                    if (prevState !== true) {
+                      setNewPlaceStatus(true);
+                      return true;
+                    }
+                    setNewPlaceStatus(false);
+                    return false;
+                  })}
+              >
+                <FontAwesomeIcon icon={isNewLocation ? faTimes : faPlus} />
+              </button>
+            </div>
           </div>
           <div className="form-group">
             <label htmlFor="place">Место</label>
@@ -200,6 +252,7 @@ const CreateWindow: React.FC<Props> = React.memo(
                 type="button"
                 className="btn btn-primary"
                 onClick={() => setNewPlaceStatus(prevState => !prevState)}
+                disabled={isNewLocation}
               >
                 <FontAwesomeIcon icon={isNewPlace ? faTimes : faPlus} />
               </button>
